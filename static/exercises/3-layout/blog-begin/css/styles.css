@@ -6,8 +6,12 @@ html {
 }
 header {
     display: flex;
-    flex-flow: row;
+    flex-flow: row nowrap;
     justify-content: center;
+}
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
 }
 .rightheader {
     margin: 1.5rem 0 1.3rem 1rem;
@@ -24,11 +28,12 @@ ul {
     border-top: #DA0090 solid 1px;
     border-bottom: #DA0090 solid 1px;
     display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
     margin-top: 0;
+    list-style: none;
 }
 nav li {
-    list-style: none;
     margin: 0.4rem 1rem 0.4rem 1rem;
 }
 nav a {
@@ -52,7 +57,6 @@ article{
 }
 body {
     font-family: 'Open Sans', sans-serif;
-    padding: 0 2rem 2rem;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Kavivanar', cursive;
@@ -81,13 +85,12 @@ footer {
 }
 footer ul {
     border-style: none;
-    list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
 }
-footer a {
-    padding: 0.1rem;
+footer li {
+    flex-basis: 5%;
 }
-footer p {
-    display: inline-block;
-    margin-left: 3rem;
-}
-
