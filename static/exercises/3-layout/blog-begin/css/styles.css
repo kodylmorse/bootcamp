@@ -4,8 +4,55 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+header {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+.rightheader {
+    margin: 1.5rem 0 1.3rem 1rem;
+}
+.rightheader h1{ 
+    color: #DA0090;
+    font-size: 3rem;
+    margin-bottom: 1.3rem;
+}
+.rightheader p{
+    margin-top: -1.7rem; 
+}
+ul {
+    border-top: #DA0090 solid 1px;
+    border-bottom: #DA0090 solid 1px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+nav li {
+    list-style: none;
+    margin: 0.4rem 1rem 0.4rem 1rem;
+}
+nav a {
+    color: darkslategray;
+}
+section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin: 0.3rem auto;
+    border-bottom: #DA0090 solid 1px;
+}
+article img{
+    border-radius: 15px; 
+    float: left;
+    clear: none;
+    margin-right: 1rem;
+}
+article{
+    margin-bottom: 4rem;
+}
 body {
     font-family: 'Open Sans', sans-serif;
+    padding: 0 2rem 2rem;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Kavivanar', cursive;
@@ -30,4 +77,17 @@ a:hover {
 footer {
     text-align: center;
     font-size: 0.8rem;
+    border-top: #DA0090 solid 1px;
 }
+footer ul {
+    border-style: none;
+    list-style: none;
+}
+footer a {
+    padding: 0.1rem;
+}
+footer p {
+    display: inline-block;
+    margin-left: 3rem;
+}
+
